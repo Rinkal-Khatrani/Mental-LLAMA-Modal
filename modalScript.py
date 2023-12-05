@@ -31,7 +31,7 @@ def run_script():
         # response = tokenizer.batch_decode(
         #     generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 
-        logging.debug("Generated response: %s", response)
+        logging.debug("Generated response: %s")
 
     except Exception as e:
         logging.error("An error occurred: %s", str(e))
