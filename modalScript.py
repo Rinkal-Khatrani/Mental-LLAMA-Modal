@@ -17,13 +17,13 @@ token = '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'
 def run_script():
     try:
         logging.debug("Initializing tokenizer and model.")
-        tokenizer = AutoTokenizer.from_pretrained(
-            "NEU-HAI/mental-alpaca", legacy=False)
-        model = AutoModelForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
         # tokenizer = AutoTokenizer.from_pretrained(
-        #     "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
-        # model = AutoModelForCausalLM.from_pretrained(
-        #     "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
+        #     "NEU-HAI/mental-alpaca", legacy=False)
+        # model = AutoModelForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
+        tokenizer = AutoTokenizer.from_pretrained(
+            "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
+        model = AutoModelForCausalLM.from_pretrained(
+            "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
 
         prompt = '''Analyze this instruction in an ABA session and tell me what is it Token economy
 "Now, so we're going to be using this talking board. And when you reach the goal, then you're going to get the puzzle."'''
