@@ -1,12 +1,18 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, LlamaForCausalLM
 
 # Install sentencepiece
 # You can run this command in your terminal or command prompt.
 # pip install sentencepiece
 
-tokenizer = AutoTokenizer.from_pretrained(
-    "NEU-HAI/mental-alpaca", legacy=False)
-model = AutoModelForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
+# tokenizer = AutoTokenizer.from_pretrained(
+#     "NEU-HAI/mental-alpaca", legacy=False)
+# model = AutoModelForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
+
+model = LlamaForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
+tokenizer = AutoTokenizer.from_pretrained("NEU-HAI/mental-alpaca")
+
+prompt = "Hey, are you conscious? Can you talk to me?"
+inputs = tokenizer(prompt, return_tensors="pt")
 
 prompt = "Hey, are you conscious? Can you talk to me?"
 inputs = tokenizer(prompt, return_tensors="pt")
