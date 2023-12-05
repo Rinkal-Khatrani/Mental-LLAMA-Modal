@@ -2,9 +2,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
 tokenizer = AutoTokenizer.from_pretrained(
-    "NEU-HAI/mental-alpaca", user_auth_token='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')
+    "NEU-HAI/mental-alpaca", use_auth_token='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')
 model = AutoModelForCausalLM.from_pretrained(
-    "NEU-HAI/mental-alpaca", user_auth_token='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')
+    "NEU-HAI/mental-alpaca", use_auth_token='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')
 
 prompt = "Hey, are you conscious? Can you talk to me?"
 inputs = tokenizer(prompt, return_tensors="pt")
