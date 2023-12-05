@@ -64,12 +64,31 @@ Therapist is praising the child : "Agh, agh, agh, agh, agh, agh, agh."?
 Therapist is giving instruction to the child. "OK, that's banana."
 Therapist is responding to the child. "Excellent Job"
 Therapist is responding to the child. "Good Job"'''
-        inputs = tokenizer(prompt2, return_tensors="pt")
-        logging.debug("Generating text.")
-        generate_ids = model.generate(
-            inputs.input_ids, max_length=len(prompt2))
-        response = tokenizer.batch_decode(
-            generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+
+        prompt3 = '''Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA'''
+        prompts = [
+            prompt1,
+            prompt2,
+            prompt3
+        ]
+
+        responses = []
+
+        for prompt in prompts:
+            inputs = tokenizer(prompt, return_tensors="pt")
+            logging.debug("Generating text.")
+            generate_ids = model.generate(
+                inputs.input_ids, max_length=len(prompt))
+            response = tokenizer.batch_decode(
+                generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+            responses.append(response)
+            logging.debug("Generated response: %s", response)
+
+        # Save responses to a file
+        with open("responses.txt", "w", encoding="utf-8") as file:
+            for prompt, response in zip(prompts, responses):
+                file.write(
+                    f"Prompt:\n{prompt}\n\nResponse:\n{response}\n\n{'='*50}\n")
 
         logging.debug("Generated response: %s", response)
 
