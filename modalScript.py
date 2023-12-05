@@ -29,7 +29,8 @@ def run_script():
 "Now, so we're going to be using this talking board. And when you reach the goal, then you're going to get the puzzle."'''
         inputs = tokenizer(prompt, return_tensors="pt")
         logging.debug("Generating text.")
-        generate_ids = model.generate(inputs.input_ids, max_length=50)
+        generate_ids = model.generate(
+            inputs.input_ids, max_length=len(prompt))
         response = tokenizer.batch_decode(
             generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 
