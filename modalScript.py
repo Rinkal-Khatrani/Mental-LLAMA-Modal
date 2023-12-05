@@ -26,13 +26,13 @@ def run_script():
         #     "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
 
         prompt = "Hey, are you conscious? Can you talk to me?"
-        # inputs = tokenizer(prompt, return_tensors="pt")
+        inputs = tokenizer(prompt, return_tensors="pt")
         logging.debug("Generating text.")
-        # generate_ids = model.generate(inputs.input_ids, max_length=30)
-        # response = tokenizer.batch_decode(
-        #     generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+        generate_ids = model.generate(inputs.input_ids, max_length=30)
+        response = tokenizer.batch_decode(
+            generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 
-        logging.debug("Generated response: %s")
+        logging.debug("Generated response: %s", response)
 
     except Exception as e:
         logging.error("An error occurred: %s", str(e))
