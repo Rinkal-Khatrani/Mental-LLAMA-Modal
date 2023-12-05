@@ -20,9 +20,9 @@ def run_script():
         # tokenizer = AutoTokenizer.from_pretrained("NEU-HAI/mental-alpaca", legacy=False)
         # model = AutoModelForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
         tokenizer = AutoTokenizer.from_pretrained(
-            "NEU-HAI/Llama-2-7b-alpaca-cleaned", use_auth_token=token)
+            "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
         model = AutoModelForCausalLM.from_pretrained(
-            "NEU-HAI/Llama-2-7b-alpaca-cleaned", use_auth_token=token)
+            "NEU-HAI/Llama-2-7b-alpaca-cleaned", token=token)
 
         prompt = "Hey, are you conscious? Can you talk to me?"
         # inputs = tokenizer(prompt, return_tensors="pt")
