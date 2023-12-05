@@ -15,17 +15,19 @@ logging.basicConfig(level=logging.DEBUG)
 def run_script():
     try:
         logging.debug("Initializing tokenizer and model.")
+        # tokenizer = AutoTokenizer.from_pretrained("NEU-HAI/mental-alpaca", legacy=False)
+        # model = AutoModelForCausalLM.from_pretrained("NEU-HAI/mental-alpaca")
         tokenizer = AutoTokenizer.from_pretrained(
             "NEU-HAI/Llama-2-7b-alpaca-cleaned")
         model = AutoModelForCausalLM.from_pretrained(
             "NEU-HAI/Llama-2-7b-alpaca-cleaned")
 
         prompt = "Hey, are you conscious? Can you talk to me?"
-        inputs = tokenizer(prompt, return_tensors="pt")
+        # inputs = tokenizer(prompt, return_tensors="pt")
         logging.debug("Generating text.")
-        generate_ids = model.generate(inputs.input_ids, max_length=30)
-        response = tokenizer.batch_decode(
-            generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+        # generate_ids = model.generate(inputs.input_ids, max_length=30)
+        # response = tokenizer.batch_decode(
+        #     generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 
         logging.debug("Generated response: %s", response)
 
