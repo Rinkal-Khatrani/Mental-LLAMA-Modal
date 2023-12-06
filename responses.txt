@@ -5,7 +5,7 @@ Analyze this instruction in an ABA session and tell me what is it Token economy
 Response:
 Analyze this instruction in an ABA session and tell me what is it Token economy
 "Now, so we're going to be using this talking board. And when you reach the goal, then you're going to get the puzzle."
-In this instruction, the teacher is using a token economy to reinforce the student's behavior. The student will receive a reward (the puzzle) when they reach the goal (using the talking board). This type of instruction is used to reinforce desired behaviors and can be used in ABA sessions to teach new skills or reinforce existing ones.
+Token economy is a type of operant conditioning in which a behavior is strengthened by rewarding desired behavior with a token or other type of reward. In this example, the student will receive a puzzle piece after reaching their goal on the talking board.
 
 ==================================================
 Prompt:
@@ -32,20 +32,7 @@ Therapist is making the child ready for the session: OK, ready?
 Therapist is giving instruction to the child. "Touch Banana"
 Therapist is responding to child's response : No, try again.
 Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Very Nice"
-Therapist is making the child ready for the session: "Ok Here we Go?"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Good Job"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "That's right, banana."
-Therapist is praising the child "Wooo!"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Very good!"
-Therapist is making the child ready for the session: "Three, two, one."?
-Therapist is praising the child : "Agh, agh, agh, agh, agh, agh, agh."?
-Therapist is giving instruction to the child. "OK, that's banana."
-Therapist is responding to the child. "Excellent Job"
-Therapist is responding to the child. "Good Job"
+"
 
 Response:
 For an ABA session where a child is undergoing therapy with a therapist , analyze the conversation  sequentially  between child and therapist and act as a Board Certified Behavior Analyst and do the following. 
@@ -71,39 +58,13 @@ Therapist is making the child ready for the session: OK, ready?
 Therapist is giving instruction to the child. "Touch Banana"
 Therapist is responding to child's response : No, try again.
 Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Very Nice"
-Therapist is making the child ready for the session: "Ok Here we Go?"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Good Job"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "That's right, banana."
-Therapist is praising the child "Wooo!"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Very good!"
-Therapist is making the child ready for the session: "Three, two, one."?
-Therapist is praising the child : "Agh, agh, agh, agh, agh, agh, agh."?
-Therapist is giving instruction to the child. "OK, that's banana."
-Therapist is responding to the child. "Excellent Job"
-Therapist is responding to the child. "Good Job"
-Therapist is praising the child "Wooo!"
-Therapist is responding to the child. "Very nice!"
-Therapist is making the child ready for the session: "OK, ready?"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "That's right, banana."
-Therapist is praising the child "Wooo!"
-Therapist is responding to the child. "Very good!"
-Therapist is making the child ready for the session: "Three, two, one."?
-Therapist is praising the child : "Agh, agh, agh, agh, agh, agh, agh."?
-Therapist is responding to the child. "Excellent Job"
-Therapist is responding to the child. "Good Job"
-Therapist is praising the child "Wooo!"
-Therapist is responding to the child. "Very nice!"
+"Child is responding correctly 2 times.  Target was done 2 times correctly and 1 time incorrectly.  Therapist appreciated the child 1 time.  Target was done 3 times overall.  Area of improvements for the therapist is to increase the number of times the child responds correctly.  Summary: Child responded correctly 2 times and incorrectly 1 time. Therapist appreciated the child 1 time.  Target was done 3 times overall.  Area of improvements for the therapist is to increase the number of times the child responds correctly.
 
 ==================================================
 Prompt:
 Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA
 
 Response:
-Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA therapy. everyone is different and may require different approaches to therapy. 100% of the time, the therapist should be providing feedback on the child's progress. It is important to remember that ABA therapy is not a one-size-fits-all approach, and what works for one child may not work for another.
+Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA therapy. everybody knows that ABA therapy is an effective treatment for children with autism, but what exactly is it and how does it work? ABA therapy stands for Applied Behavior Analysis and it is a scientifically proven form of therapy that focuses on the behavior of the individual. In ABA therapy, the therapist works
 
 ==================================================
