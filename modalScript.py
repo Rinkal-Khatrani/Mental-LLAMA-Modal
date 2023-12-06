@@ -86,7 +86,7 @@ Therapist is giving instruction to the child. "Touch Banana"
 
 if __name__ == "__main__":
     try:
-        logging.debug("Script started.")
+        logging.debug("Script started....")
         run_script()
         logging.debug("Script finished.")
 
