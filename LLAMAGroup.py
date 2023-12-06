@@ -31,13 +31,9 @@ def run_script():
         prompt3 = '''Outline a behavior intervention plan for reducing a child's tantrums during transitions.'''
         prompts = [
             # '''Explain how to reinforce positive behaviors in a child with ADHD using token economies.''',
-            # '''Describe activities to promote language development in non-verbal children.''',
-            '''Provide examples of visual supports that can enhance communication for a child with speech delays.''',
-            '''Create a task analysis for teaching a child to independently brush their teeth.''',
-            '''Suggest strategies for promoting self-care skills in a child with developmental delays.''',
-            "Explain the steps involved in conducting a functional behavior assessment for a child with challenging behaviors.",
-            "Provide examples of antecedents and consequences in the context of behavior analysis.",
-            "Offer tips for parents on implementing reinforcement strategies at home."
+            '''"Under which key domain or verbal operand this instruction lies Therapist is responding to the child. ""Very nice!""
+?"''', '''"Under which key domain or verbal operand this instruction lies Therapist is making the child ready for the session: ""OK, ready?""
+?"'''
         ]
 
         responses = []
