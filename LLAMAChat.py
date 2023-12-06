@@ -35,10 +35,10 @@ Therapist is giving instruction to the child. "Touch Banana"
 "'''
 
 prompt3 = '''Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA'''
-inputs = tokenizer(prompt2, return_tensors="pt")
+inputs = tokenizer(prompt3, return_tensors="pt")
 
 # Generate
-generate_ids = model.generate(inputs.input_ids, max_length=len(prompt2))
+generate_ids = model.generate(inputs.input_ids, max_length=len(prompt3))
 aa = tokenizer.batch_decode(
     generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 print("Response", aa)
