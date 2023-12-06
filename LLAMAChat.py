@@ -1,10 +1,11 @@
-from transformers import LlamaTokenizer, LlamaForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
 access_token = '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'
 
-tokenizer = LlamaTokenizer.from_pretrained('klyang/MentaLLaMA-chat-7B')
-model = LlamaForCausalLM.from_pretrained(
-    'klyang/MentaLLaMA-chat-7B', device_map='auto')
+tokenizer = AutoTokenizer.from_pretrained(
+    "klyang/MentaLLaMA-chat-7B", legacy=False)
+model = AutoModelForCausalLM.from_pretrained(
+    "klyang/MentaLLaMA-chat-7B", token=access_token)
 
 prompt = '''Analyze this instruction in an ABA session and tell me what is it Token economy
 "Now, so we're going to be using this talking board. And when you reach the goal, then you're going to get the puzzle."'''
