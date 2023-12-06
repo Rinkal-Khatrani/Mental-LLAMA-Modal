@@ -28,18 +28,15 @@ prompt2 = '''For an ABA session where a child is undergoing therapy with a thera
 -  Reinforcement and Praise 
 
 This is a ABA therapy session text: 
-Therapist is making the child ready for the session: OK, ready?
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to child's response : No, try again.
 Therapist is giving instruction to the child. "Touch Banana"
 "'''
 
 # prompt3 = '''Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA'''
 prompt3 = '''Provide a step-by-step guide on teaching a child to greet others appropriately.'''
-inputs = tokenizer(prompt3, return_tensors="pt")
+inputs = tokenizer(prompt2, return_tensors="pt")
 
 # Generate
-generate_ids = model.generate(inputs.input_ids, max_length=len(prompt3))
+generate_ids = model.generate(inputs.input_ids, max_length=len(prompt2))
 aa = tokenizer.batch_decode(
     generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 print("Response", aa)
