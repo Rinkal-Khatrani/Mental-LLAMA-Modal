@@ -32,7 +32,7 @@ Therapist is giving instruction to the child. "Touch Banana"
 "'''
 
 # prompt3 = '''Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA'''
-prompt3 = '''Can you define verbal operands of ABA?'''
+prompt3 = '''Can you define verbal operands of ABA Therapy with some examples?'''
 inputs = tokenizer(prompt3, return_tensors="pt")
 
 # Generate
