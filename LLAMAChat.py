@@ -7,7 +7,8 @@ tokenizer = AutoTokenizer.from_pretrained(
 model = AutoModelForCausalLM.from_pretrained(
     "klyang/MentaLLaMA-chat-7B", token=access_token)
 
-prompt = "Hey, are you conscious? Can you talk to me?"
+prompt = '''Analyze this instruction in an ABA session and tell me what is it Token economy
+"Now, so we're going to be using this talking board. And when you reach the goal, then you're going to get the puzzle."'''
 inputs = tokenizer(prompt, return_tensors="pt")
 
 # Generate
