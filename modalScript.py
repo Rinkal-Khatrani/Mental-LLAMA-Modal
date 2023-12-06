@@ -50,20 +50,7 @@ Therapist is making the child ready for the session: OK, ready?
 Therapist is giving instruction to the child. "Touch Banana"
 Therapist is responding to child's response : No, try again.
 Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Very Nice"
-Therapist is making the child ready for the session: "Ok Here we Go?"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Good Job"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "That's right, banana."
-Therapist is praising the child "Wooo!"
-Therapist is giving instruction to the child. "Touch Banana"
-Therapist is responding to the child. "Very good!"
-Therapist is making the child ready for the session: "Three, two, one."?
-Therapist is praising the child : "Agh, agh, agh, agh, agh, agh, agh."?
-Therapist is giving instruction to the child. "OK, that's banana."
-Therapist is responding to the child. "Excellent Job"
-Therapist is responding to the child. "Good Job"'''
+"'''
 
         prompt3 = '''Therapist instructions such as DO this and Follow me form in which domain or verbal operant of ABA'''
         prompts = [
