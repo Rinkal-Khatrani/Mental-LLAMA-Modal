@@ -33,7 +33,11 @@ def run_script():
             # '''Explain how to reinforce positive behaviors in a child with ADHD using token economies.''',
             '''"Under which key domain or verbal operand this instruction lies Therapist is responding to the child. ""Very nice!""
 ?"''', '''"Under which key domain or verbal operand this instruction lies Therapist is making the child ready for the session: ""OK, ready?""
-?"'''
+?"''', '''"please provide all the ABA Domains in which given conversation lies
+Therapist is giving instruction to the child. ""Touch Banana""
+Therapist is responding to the child. ""That's right, banana.""
+Therapist is praising the child ""Wooo!""
+Therapist is responding to the child. ""Very good!"""'''
         ]
 
         responses = []
