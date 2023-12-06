@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 access_token = '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'
 
 tokenizer = AutoTokenizer.from_pretrained(
-    "klyang/MentaLLaMA-chat-7B", token=access_token)
+    "klyang/MentaLLaMA-chat-7B", legacy=False)
 model = AutoModelForCausalLM.from_pretrained(
     "klyang/MentaLLaMA-chat-7B", token=access_token)
 
